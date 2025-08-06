@@ -1,9 +1,7 @@
 version: '3'
 services:
   chatbot:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: abd0dev/mychatbotprompt25:latest
     container_name: chatbot
     environment:
       - OPENAI_API_KEY=${OPENAI_API_KEY}
