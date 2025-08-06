@@ -81,7 +81,7 @@ pipeline {
               branches: [[name: 'refs/heads/main']],
               doGenerateSubmoduleConfigurations: false,
               extensions: [],
-              userRemoteConfigs: [[url: 'https://github.com/Mr3bd/promfoo2025.git']]
+              userRemoteConfigs: [[url: 'https://github.com/Mr3bd/promfooapp25.git']]
             ])
           }
         }
