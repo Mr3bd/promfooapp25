@@ -73,6 +73,10 @@
 pipeline {
     agent any
 
+    environment {
+        OPENAI_API_KEY = credentials('openai-api-key-id')
+    }
+
     stages {
         stage('Checkout') {
           steps {
