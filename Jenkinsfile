@@ -93,9 +93,9 @@ pipeline {
         stage('Docker Compose Up') {
             steps {
                 script {
-                    bat 'docker-compose down'     // Clean up any old containers
-                    bat 'docker-compose build'    // Build updated image
-                    bat 'docker-compose up --abort-on-container-exit' // Wait for promptfoo eval
+                    bat 'docker-compose down'
+                    bat 'docker-compose build' 
+                    bat 'docker-compose up --abort-on-container-exit'
                 }
             }
         }
